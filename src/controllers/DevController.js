@@ -38,5 +38,11 @@ module.exports = {
             })
         }
         return response.json(dev);
-    }
+    },
+    ansync update(){
+
+    },
+    ansync destroy(){
+
+    },
 };   
