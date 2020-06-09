@@ -1,6 +1,6 @@
 const axios = require('axios');
 const Dev = require('../models/Dev');
-const parseStringAsArray = require('../utils/parseStringAsArray')
+const parseStringAsArray = require('../utils/parseStringAsArray');
 
 // index, show, store, update, destroy
 
@@ -10,7 +10,6 @@ module.exports = {
 
         return response.json(devs);
     },
-
     async store(request, response)  {
         const { github_username, techs, latitude, longitude } = request.body;
 
@@ -38,11 +37,5 @@ module.exports = {
             })
         }
         return response.json(dev);
-    },
-    ansync update(){
-
-    },
-    ansync destroy(){
-
     },
 };   
